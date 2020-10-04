@@ -17,25 +17,6 @@
   &__wrapper {
     flex-grow: 1;
   }
-
-  // .hero__images
-
-  &__images {
-  }
-
-  // .hero__shadows
-
-  &__shadows {
-  }
-  // .hero__text
-
-	&__text {
-  }
-  
-  // .hero__info
-
-  &__info {
-  }
 }
 
 .header {
@@ -74,11 +55,6 @@
     @media (max-width: 767px) {
       max-width: 82px;
     }
-  }
-
-  // .header__socials
-
-  &__socials {
   }
 }
 .socials {
@@ -406,11 +382,6 @@
   @media (max-width: 767px) {
     flex-direction: column;
   }
-  // .info-hero__btn
-
-  &__btn {
-
-  }
 
   // .info-hero__terms
 
@@ -534,10 +505,6 @@
     opacity: 1;
     pointer-events: all;
   }
-		// .modal__info
-
-		&__info {
-		}
 }
 .modal-info {
   transition: all .3s ease;
@@ -617,16 +584,6 @@
       font-size: 14px;
       line-height: 16px;
       font-family: "SFProDisplay-Light", sans-serif;
-
-			// .modal-info__list_1
-
-			&_1 {
-			}
-
-			// .modal-info__list_2
-
-			&_2 {
-			}
 		}
 
 		// .modal-info__list-item
@@ -692,146 +649,6 @@
 			}
 		}
 }
-
-
-
-
-
-.modal-info {
-
-}
-// .info-list {
-//   overflow-y: auto;
-//   margin-right: 8px;
-//   height: 100%;
-//   font-size: 26px;
-//   line-height: 31px;
-//   letter-spacing: -0.045em;
-//   scrollbar-color: #458245 #C4C4C4;
-//   scrollbar-width: thin;
-//   &::-webkit-scrollbar {
-//     background-color: #C4C4C4;
-//     width: 3px;
-//   }
-//   &::-webkit-scrollbar-thumb {
-//     background-color: #129A48;
-//   }
-//   @media (max-width: 990px) {
-//     font-size: 20px;
-//     line-height: 24px;
-//   }
-//   @media (max-width: 767px) {
-//     font-size: 20px;
-//     line-height: 24px;
-//     &::-webkit-scrollbar { width: 0; }
-//     -ms-overflow-style: none;
-//     scrollbar-width: none;
-//   }
-  
-//   // .info-list__title
-
-//   &__title {
-//     padding-left: 87px;
-//     text-transform: uppercase;
-//     margin-bottom: 40px;
-//     font-family: "SFProDisplay-Semibold", sans-serif;
-//     @media (max-width: 990px) {
-//       padding-left: 61px;
-//     }
-    
-//   }
-//   // .info-list__item
-
-//   &__item {
-//     position: relative;
-//     padding-left: 81px;
-//     margin-bottom: 35px;
-//     min-height: 34px;
-//     max-width: 830px;
-//     font-family: "SFProDisplay-Regular", sans-serif;
-//     &_1 {
-//       .info-list__num {
-//         top: 15px;
-//       }
-//     }
-//     &_3 {
-//       .info-list__num {
-//         top: 15px;
-//       }
-//     }
-//     p {
-//       margin: 0 0 35px 0;
-//       &:last-child {
-//         margin-bottom: 0;
-//       }
-//     }
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//     span {
-//       font-family: "SFProDisplay-Light", sans-serif;
-//       color: #129A48;
-//     }
-//     @media (max-width: 990px) {
-//       padding-left: 61px;
-//       max-width: 500px;
-//       p {
-//         margin: 0 0 20px 0;
-//       }
-//       &_2 {
-//         .info-list__num {
-//           top: 10px;
-//         }
-//       }
-//     }
-//     @media (max-width: 375px) {
-//       max-width: 300px;
-//     }
-//   }
-//    // .info-list__link
-//    &__link {
-//     color: #129A48;
-//     font-family: "SFProDisplay-Light", sans-serif;
-//     text-decoration: underline;
-//     &_md {
-//       display: none;
-//     }
-//     @media (max-width: 1024px) {
-//       display: none;
-//       &_md {
-//         display: inline-block;
-//       }
-//     }
-//    }
-//    // .info-list__mail
-//    &__mail {
-//     color: #129A48;
-//     font-family: "SFProDisplay-Light", sans-serif;
-//     text-decoration: underline;
-//    }
-//   // .info-list__num
-
-//   &__num {
-//     position: absolute;
-//     left: 30px;
-//     top: 0;
-//     text-align: center;
-//     font-size: 48px;
-//     letter-spacing: -0.045em;
-//     color: #000 !important;
-//     font-family: "SFProDisplay-Semibold", sans-serif;
-//     @media (max-width: 990px) {
-//       left: 20px;
-//       font-size: 36px;
-//     }
-//     @media (max-width: 767px) {
-//       font-size: 36.8px;
-//       line-height: 44px;
-//       left: 20px;
-//     }
-//   }
-// }
-
 
 //animations 
 
