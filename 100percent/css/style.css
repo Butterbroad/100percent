@@ -58,7 +58,7 @@ body {
 body {
   font-size: 14px;
   font-weight: 400;
-  overflow: hidden;
+  overflow-y: auto;
   min-height: 100vh;
   background-color: #cecece;
 }
@@ -221,6 +221,8 @@ input:focus::placeholder {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 0 15px 0;
+  background-color: #032e11;
 }
 
 .hero .container {
@@ -325,24 +327,24 @@ input:focus::placeholder {
   bottom: 0;
   left: 170px;
   z-index: 2;
-  -webkit-animation: centerSmoke1 10s ease-out forwards;
-          animation: centerSmoke1 10s ease-out forwards;
+  -webkit-animation: centerSmoke1 7s ease-out forwards;
+          animation: centerSmoke1 7s ease-out forwards;
 }
 
 .images-hero__smoke_right {
   bottom: 0;
   right: -50px;
   z-index: 2;
-  -webkit-animation: centerSmoke2 10s ease-out forwards;
-          animation: centerSmoke2 10s ease-out forwards;
+  -webkit-animation: centerSmoke2 7s ease-out forwards;
+          animation: centerSmoke2 7s ease-out forwards;
 }
 
 .images-hero__smoke_top {
   left: 35px;
   top: -60px;
   z-index: 1;
-  -webkit-animation: centerSmoke3 10s ease-out forwards;
-          animation: centerSmoke3 10s ease-out forwards;
+  -webkit-animation: centerSmoke3 7s ease-out forwards;
+          animation: centerSmoke3 7s ease-out forwards;
 }
 
 .images-hero__football {
@@ -350,8 +352,8 @@ input:focus::placeholder {
   bottom: 0;
   right: 115px;
   z-index: 1;
-  -webkit-animation: footballPlayers 10s ease-out forwards;
-          animation: footballPlayers 10s ease-out forwards;
+  -webkit-animation: footballPlayers 7s ease-out forwards;
+          animation: footballPlayers 7s ease-out forwards;
 }
 
 .images-hero__football img {
@@ -363,8 +365,8 @@ input:focus::placeholder {
   bottom: 10px;
   left: 285px;
   z-index: 2;
-  -webkit-animation: hockeyPlayer 10s ease-out forwards;
-          animation: hockeyPlayer 10s ease-out forwards;
+  -webkit-animation: hockeyPlayer 7s ease-out forwards;
+          animation: hockeyPlayer 7s ease-out forwards;
 }
 
 .images-hero__hockey img {
@@ -376,8 +378,8 @@ input:focus::placeholder {
   bottom: -80px;
   left: 10px;
   opacity: .3;
-  -webkit-animation: particles 10s ease-out forwards;
-          animation: particles 10s ease-out forwards;
+  -webkit-animation: particles 7s ease-out forwards;
+          animation: particles 7s ease-out forwards;
 }
 
 .images-hero__particles img {
@@ -389,8 +391,8 @@ input:focus::placeholder {
   bottom: 0;
   left: 115px;
   z-index: 1;
-  -webkit-animation: tennisPlayer 10s ease-out forwards;
-          animation: tennisPlayer 10s ease-out forwards;
+  -webkit-animation: tennisPlayer 7s ease-out forwards;
+          animation: tennisPlayer 7s ease-out forwards;
 }
 
 .images-hero__tennis img {
@@ -405,8 +407,8 @@ input:focus::placeholder {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1;
-  -webkit-animation: basketballPlayer 10s ease-out forwards;
-          animation: basketballPlayer 10s ease-out forwards;
+  -webkit-animation: basketballPlayer 7s ease-out forwards;
+          animation: basketballPlayer 7s ease-out forwards;
 }
 
 .images-hero__basketball img {
@@ -567,8 +569,8 @@ input:focus::placeholder {
   left: 0;
   bottom: 0;
   z-index: 2;
-  -webkit-animation: mainSmokeLeft 10s ease-out forwards;
-          animation: mainSmokeLeft 10s ease-out forwards;
+  -webkit-animation: mainSmokeLeft 7s ease-out forwards;
+          animation: mainSmokeLeft 7s ease-out forwards;
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
@@ -579,8 +581,8 @@ input:focus::placeholder {
   right: 0;
   bottom: 0;
   z-index: 2;
-  -webkit-animation: mainSmokeRight 10s ease-out forwards;
-          animation: mainSmokeRight 10s ease-out forwards;
+  -webkit-animation: mainSmokeRight 7s ease-out forwards;
+          animation: mainSmokeRight 7s ease-out forwards;
 }
 
 .shadows-hero__smoke-shadow {
@@ -665,10 +667,10 @@ input:focus::placeholder {
 .modal-info__content {
   overflow-y: auto;
   height: 100%;
-  scrollbar-color: #458245 #C4C4C4;
-  scrollbar-width: thin;
   padding: 20px 30px 30px 55px;
   margin-right: 25px;
+  scrollbar-width: thin;
+  scrollbar-color: #129A48 #C4C4C4;
 }
 
 .modal-info__content::-webkit-scrollbar {
@@ -1016,8 +1018,8 @@ input:focus::placeholder {
 
 @media (min-width: 1280px) {
   .images-hero__100proc svg {
-    -webkit-animation: line 10s ease-out forwards;
-            animation: line 10s ease-out forwards;
+    -webkit-animation: line 7s ease-out forwards;
+            animation: line 7s ease-out forwards;
   }
 }
 
@@ -1177,6 +1179,26 @@ input:focus::placeholder {
   }
 }
 
+@media (max-width: 800px) {
+  .text-hero {
+    bottom: 35%;
+  }
+
+  .info-hero {
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 769px) {
+  .text-hero {
+    bottom: 30%;
+  }
+
+  .info-hero {
+    bottom: 23%;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
@@ -1205,10 +1227,6 @@ input:focus::placeholder {
   .socials__item img {
     width: 16.48px;
     height: 16.48px;
-  }
-
-  .text-hero {
-    bottom: 30%;
   }
 
   .text-hero__title-box {
@@ -1257,6 +1275,116 @@ input:focus::placeholder {
   }
 }
 
+@media (max-width: 640px) {
+  .images-hero__smoke_left {
+    left: -30px;
+  }
+
+  .images-hero__smoke_top {
+    left: -50px;
+  }
+
+  .images-hero__football {
+    right: 40px;
+  }
+
+  .images-hero__hockey {
+    left: 40px;
+  }
+
+  .images-hero__tennis {
+    left: -100%;
+  }
+
+  .images-hero__basketball {
+    left: 41%;
+  }
+
+  .images-hero__100proc {
+    left: -45%;
+  }
+
+  .text-hero {
+    bottom: 35%;
+  }
+
+  .info-hero {
+    bottom: 26%;
+  }
+
+  .modal-info__close {
+    width: 20px;
+    height: 22px;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .images-hero__smoke_top {
+    display: none;
+  }
+
+  .images-hero__football {
+    max-width: 245px;
+    min-width: auto;
+    right: 20px;
+  }
+
+  .images-hero__hockey {
+    max-width: 209px;
+    min-width: auto;
+    left: -5%;
+  }
+
+  .images-hero__basketball {
+    max-width: 83px;
+    min-width: auto;
+    left: 35%;
+  }
+
+  .images-hero__100proc {
+    min-width: 555px;
+    bottom: -35px;
+    left: -40%;
+  }
+
+  .images-hero__100proc svg {
+    min-width: 407px;
+    bottom: 20px;
+    right: -40%;
+  }
+
+  .text-hero {
+    bottom: 31%;
+  }
+
+  .info-hero {
+    bottom: 22%;
+  }
+}
+
+@media (max-width: 375px) {
+  .images-hero__100proc {
+    left: -47%;
+  }
+}
+
+@media (max-width: 330px) {
+  .images-hero__hockey {
+    left: -25%;
+  }
+
+  .images-hero__basketball {
+    left: 25%;
+    bottom: -20px;
+  }
+
+  .images-hero__100proc {
+    left: -65%;
+  }
+}
+
 @media (min-height: 1199px) {
   .images-hero__smoke_top {
     top: 5%;
@@ -1266,6 +1394,28 @@ input:focus::placeholder {
 @media (min-height: 1365px) {
   .images-hero__smoke_top {
     top: 25%;
+  }
+}
+
+@media (max-height: 667px) {
+  .text-hero {
+    bottom: 25%;
+  }
+}
+
+@media (max-height: 568px) {
+  .text-hero {
+    bottom: 17%;
+  }
+
+  .info-hero {
+    bottom: 5% !important;
+  }
+}
+
+@media (max-height: 668px) {
+  .info-hero {
+    bottom: 13%;
   }
 }
 
