@@ -80,6 +80,7 @@
       opacity: 1;
     }
     @media (max-width: 767px) {
+      margin-right: 12px;
       img {
         width: 16.48px;
         height: 16.48px;
@@ -529,6 +530,19 @@
       }
     }
   }
+  // .info-hero__btn
+
+  &__btn {
+    &_md {
+      display: none;
+    }
+    // @media (max-width: 1024px) {
+    //   display: none;
+    //   &_md {
+    //     display: flex;
+    //   }
+    // }
+  }
 }
 
 .shadows-hero {
@@ -688,10 +702,36 @@
 		// .modal-info__list
 
 		&__list {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 16px;
+      line-height: 19px;
       font-family: "SFProDisplay-Light", sans-serif;
-		}
+    }
+    
+    		// .modal-info__list
+
+		&__list-link {
+      color: #0A9F30;
+      display: inline-block;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #0A9F30;
+        bottom: -1px;
+        left: 0;
+      }
+      &_md {
+        display: none;
+      }
+      // @media (max-width: 1024px) {
+      //   display: none;
+      //   &_md {
+      //     display: inline-block;
+      //   }
+      // }
+    }
 
 		// .modal-info__list-item
 
@@ -702,17 +742,6 @@
       }
       a {
         color: #0A9F30;
-        display: inline-block;
-        position: relative;
-        &::before {
-          position: absolute;
-          content: '';
-          width: 100%;
-          height: 1px;
-          background-color: #0A9F30;
-          bottom: -2px;
-          left: 0;
-        }
       }
       &:last-child {
         margin-bottom: 0;
@@ -731,8 +760,8 @@
 		// .modal-info__max
 
 		&__max {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 16px;
+      line-height: 18px;
       margin: 20px 0;
       font-family: "SFProDisplay-Light", sans-serif;
     }
@@ -748,12 +777,18 @@
 		// .modal-info__btn
 
 		&__btn {
-      margin: 55px auto 0;
+      margin: 55px auto 25px;
 			// .modal-info__btn_md
 
 			&_md {
         display: none;
-			}
+      }
+      // @media (max-width: 1024px) {
+      //   display: none;
+      //   &_md {
+      //     display: flex;
+      //   }
+      // }
 		}
 }
 

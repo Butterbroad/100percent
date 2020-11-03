@@ -9,12 +9,18 @@ modalTrigger.addEventListener('click', () => {
     modal.classList.remove('active');
   });
 
-  const modalLink = document.querySelector('.modal-info__list-link');
-  modalLink.addEventListener('click', e => {
-    e.preventDefault();
-    modal.classList.remove('active');
-  })
 });
+
+
+
+//register links
+const registerLinks = document.querySelectorAll('.get-link');
+
+if (registerLinks.length > 0) {
+  registerLinks.forEach(item => {
+    item.setAttribute('href', item.getAttribute('href') + window.location.search);
+  });
+}
 
 
 
